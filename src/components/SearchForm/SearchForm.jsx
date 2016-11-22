@@ -4,6 +4,7 @@ import './SearchForm.css';
 const SearchForm = props => (
   <div id="search-container">
     <div id="month-container">
+      <h3>Choose a Month</h3>
       <button value="1" onClick={props.handleUpdateMonth}>January</button>
       <button value="2" onClick={props.handleUpdateMonth}>February</button>
       <button value="3" onClick={props.handleUpdateMonth}>March</button>
@@ -18,12 +19,14 @@ const SearchForm = props => (
       <button value="12" onClick={props.handleUpdateMonth}>December</button>
     </div>
 
+    <h3>Choose Ideal Climate</h3>
     <div id="temperature-container">
-      <button value="cold" onClick={props.handleUpdateWeather}>Cold</button>
-      <button value="warm" onClick={props.handleUpdateWeather}>Warm</button>
-      <button value="hot" onClick={props.handleUpdateWeather}>Hot</button>
+      <button id="cold" value="cold" onClick={props.handleUpdateWeather}>Cold</button>
+      <button id="warm" value="warm" onClick={props.handleUpdateWeather}>Warm</button>
+      <button id="hot" value="hot" onClick={props.handleUpdateWeather}>Hot</button>
     </div>
 
+    <h3>Get Your Options!</h3>
     <button
       id="search-button"
       onClick={() => props.searchLocation()}
