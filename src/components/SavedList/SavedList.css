@@ -1,8 +1,19 @@
 .saved-list {
+<<<<<<< HEAD
   height: 100%;
 }
 
 
 .no-saved {
 
+=======
+  height: 50%;
+  overflow: scroll;
+  background-color: #D4D4D4;
+}
+
+.saved-list h2 {
+  font-size: 20px;
+  margin: 5px;
+>>>>>>> master
 }
