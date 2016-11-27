@@ -322,6 +322,7 @@ class App extends Component {
             />
           </div>
           <div className="saved-cities-container">
+          <div className="saved-list">
             <SavedList
               fetchSavedCities={this.fetchSavedCities.bind(this)}
               savedCities={this.state.saved}
@@ -331,7 +332,8 @@ class App extends Component {
               updateFormHandler={this.updateFormHandler.bind(this)}
               getWorkPlaces={this.getWorkPlaces.bind(this)}
             />
-            <div style={{ width: '300px', height: '300px' }}>
+            </div>
+            <div className="saved-map">
             <SavedMap
               center={location}
               markers={this.state.saved}
@@ -342,7 +344,7 @@ class App extends Component {
             <WorkPlaces
               work={this.state.work}
             />
-              <div style={{ width: '300px', height: '300px' }}>
+              <div className="workplace-map">
                 <WorkPlacesMap
                   center={this.state.workCenter}
                   markers={this.state.work}
