@@ -5,9 +5,9 @@ import SearchForm from './SearchForm/SearchForm.jsx';
 import SearchList from './SearchList/SearchList.jsx';
 import SavedList from './SavedList/SavedList.jsx';
 import SavedMap from './MapContainer/MapContainer.jsx';
-import Login from './auth/Login/Login.jsx';
-import SignUp from './auth/SignUp/SignUp.jsx';
-import Logout from './auth/Logout/Logout.jsx';
+// import Login from './auth/Login/Login.jsx';
+// import SignUp from './auth/SignUp/SignUp.jsx';
+// import Logout from './auth/Logout/Logout.jsx';
 import WorkPlaces from './WorkPlaces/WorkPlaces.jsx';
 import WorkPlacesMap from './WorkPlacesMap/WorkPlacesMap.jsx';
 import style from './App.css';
@@ -27,21 +27,20 @@ class App extends Component {
       notes: '',
       work: [],
       map: '',
+      workCenter: '',
+      class: '',
       loginName: '',
       loginPass: '',
       signupName: '',
       signupPass: '',
       signupEmail: '',
-      userID: 0,
-      workCenter: '',
-      class: '',
     };
   }
 
   componentWillMount() {
     // fetch call to authenticate the user here
     this.fetchAllCities();
-    this.authenticateUser();
+    // this.authenticateUser();
   }
 
   // This function will hit our API route to fetch all the cities listed
@@ -319,118 +318,118 @@ class App extends Component {
   // passes the login data to the api
   // authenticates data with server
   // response with login and user ID
-  handleLogin() {
-    fetch('/auth/login', {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-      body: JSON.stringify({
-        username: this.state.loginName,
-        password: this.state.loginPass,
-      }),
-    })
-    .then(r => r.json())
-    .then((response) => {
-      if (!(response.user.error)) {
-        this.setState({
-          userID: response.user.id,
-        });
-        // saves jwt token and ID
-        window.localStorage.token = response.user.token;
-        window.localStorage.id = response.user.id;
-      }
-    })
-    .then(this.setState({
-      loginName: '',
-      loginPass: ''
-    }))
-    .then(console.log('logging in...'))
-    .catch(err => console.log(err));
-  }
+  // handleLogin() {
+  //   fetch('/auth/login', {
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     method: 'POST',
+  //     body: JSON.stringify({
+  //       username: this.state.loginName,
+  //       password: this.state.loginPass,
+  //     }),
+  //   })
+  //   .then(r => r.json())
+  //   .then((response) => {
+  //     if (!(response.user.error)) {
+  //       this.setState({
+  //         userID: response.user.id,
+  //       });
+  //       // saves jwt token and ID
+  //       window.localStorage.token = response.user.token;
+  //       window.localStorage.id = response.user.id;
+  //     }
+  //   })
+  //   .then(this.setState({
+  //     loginName: '',
+  //     loginPass: ''
+  //   }))
+  //   .then(console.log('logging in...'))
+  //   .catch(err => console.log(err));
+  // }
   // sends the signup data to the api server
   // encrypts new user data and saves in db
   // authenticates the response and returns the user id
-  handleSignup() {
-    fetch('/auth/signup', {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-      body: JSON.stringify({
-        username: this.state.signupName,
-        // email: this.state.signupEmail,
-        password: this.state.signupPass,
-      }),
-    })
-    .then(r => r.json())
-    .then((response) => {
-      console.log(response);
-      if (!(response.error)) {
-        this.setState({
-          userID: response.user.id,
-        })
-        window.localStorage.id = response.user.id
-      } else {
-        alert(response.message);
-      }
-    })
-    .then(this.setState({
-      signupName: '',
-      signupPass: '',
-      // signupEmail: '',
-    }))
-    .then(console.log('signup successful'))
-    .catch(err => console.log(err));
-  }
+  // handleSignup() {
+  //   fetch('/auth/signup', {
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     method: 'POST',
+  //     body: JSON.stringify({
+  //       username: this.state.signupName,
+  //       // email: this.state.signupEmail,
+  //       password: this.state.signupPass,
+  //     }),
+  //   })
+  //   .then(r => r.json())
+  //   .then((response) => {
+  //     console.log(response);
+  //     if (!(response.error)) {
+  //       this.setState({
+  //         userID: response.user.id,
+  //       })
+  //       window.localStorage.id = response.user.id
+  //     } else {
+  //       alert(response.message);
+  //     }
+  //   })
+  //   .then(this.setState({
+  //     signupName: '',
+  //     signupPass: '',
+  //     // signupEmail: '',
+  //   }))
+  //   .then(console.log('signup successful'))
+  //   .catch(err => console.log(err));
+  // }
   // handles logout of the user, will revert to login state
-  handleLogout() {
-    fetch('/auth/logout', {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'DELETE',
-      body: JSON.stringify({
-        id: this.state.userID,
-      }),
-    });
-    this.setState({ userID: 0 });
-    console.log('logging out');
-    window.localStorage.token = null;
-    window.localStorage.id = null;
-  }
+  // handleLogout() {
+  //   fetch('/auth/logout', {
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     method: 'DELETE',
+  //     body: JSON.stringify({
+  //       id: this.state.userID,
+  //     }),
+  //   });
+  //   this.setState({ userID: 0 });
+  //   console.log('logging out');
+  //   window.localStorage.token = null;
+  //   window.localStorage.id = null;
+  // }
 
   // this authenticates the user on each page load
   // uses a token from local storage to verify access
-  authenticateUser() {
-    fetch('/auth/verify', {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-      body: JSON.stringify({
-        id: this.state.id, // do we need to pass this? In localStorage...
-        token: window.localStorage.getItem('token'),
-      }),
-    })
-    .then(r => r.json())
-    .then((response) => {
-      if (!(response.error)) {
-        this.setState({
-          userID: response.user.id,
-        });
-        // saves a new jwt token
-        window.localStorage.token = response.token;
-      } else {
-        this.setState({
-          userID: 0,
-        });
-        window.localStorage.token = null;
-        window.localStorage.id = null
-      }
-    })
-    .catch(err => console.log(err));
-  }
+  // authenticateUser() {
+  //   fetch('/auth/verify', {
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     method: 'POST',
+  //     body: JSON.stringify({
+  //       id: this.state.id, // do we need to pass this? In localStorage...
+  //       token: window.localStorage.getItem('token'),
+  //     }),
+  //   })
+  //   .then(r => r.json())
+  //   .then((response) => {
+  //     if (!(response.error)) {
+  //       this.setState({
+  //         userID: response.user.id,
+  //       });
+  //       // saves a new jwt token
+  //       window.localStorage.token = response.token;
+  //     } else {
+  //       this.setState({
+  //         userID: 0,
+  //       });
+  //       window.localStorage.token = null;
+  //       window.localStorage.id = null
+  //     }
+  //   })
+  //   .catch(err => console.log(err));
+  // }
 
   // This function will fetch places to work in a particular city from the nomadlist api
   // Then, reset the state of the workCenter to the lat and lng of the city selected
@@ -454,12 +453,6 @@ class App extends Component {
     });
   }
 
-  focusMe(button) {
-    this.ref.selectedbutton =
-    document.getElementsByClassName("button-selected")[0].className = "";
-    button.className = "button-selected";
-  }
-
   render() {
     const location = {
       lat: 0,
@@ -471,13 +464,10 @@ class App extends Component {
       <div className="App">
         <Header
           updateAuthForms={event => this.updateAuthForms(event)}
-          handleSignup={this.handleSignup.bind(this)}
-          handleLogin={this.handleLogin.bind(this)}
           loginName={this.state.loginName}
           loginPass={this.state.loginPass}
           signupName={this.state.signupName}
           signupPass={this.state.signupPass}
-          handleLogout={this.handleLogout.bind(this)}
         />
         <SearchForm
           month={this.state.month}

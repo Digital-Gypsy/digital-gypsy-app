@@ -7514,8 +7514,12 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Header=__webpack_require__(/*! ./Header/Header.jsx */ 179);var _Header2=_interopRequireDefault(_Header);var _Footer=__webpack_require__(/*! ./Footer/Footer.jsx */ 181);var _Footer2=_interopRequireDefault(_Footer);var _SearchForm=__webpack_require__(/*! ./SearchForm/SearchForm.jsx */ 183);var _SearchForm2=_interopRequireDefault(_SearchForm);var _SearchList=__webpack_require__(/*! ./SearchList/SearchList.jsx */ 185);var _SearchList2=_interopRequireDefault(_SearchList);var _SavedList=__webpack_require__(/*! ./SavedList/SavedList.jsx */ 189);var _SavedList2=_interopRequireDefault(_SavedList);var _MapContainer=__webpack_require__(/*! ./MapContainer/MapContainer.jsx */ 193);var _MapContainer2=_interopRequireDefault(_MapContainer);var _Login=__webpack_require__(/*! ./auth/Login/Login.jsx */ 241);var _Login2=_interopRequireDefault(_Login);var _SignUp=__webpack_require__(/*! ./auth/SignUp/SignUp.jsx */ 243);var _SignUp2=_interopRequireDefault(_SignUp);var _Logout=__webpack_require__(/*! ./auth/Logout/Logout.jsx */ 245);var _Logout2=_interopRequireDefault(_Logout);var _WorkPlaces=__webpack_require__(/*! ./WorkPlaces/WorkPlaces.jsx */ 247);var _WorkPlaces2=_interopRequireDefault(_WorkPlaces);var _WorkPlacesMap=__webpack_require__(/*! ./WorkPlacesMap/WorkPlacesMap.jsx */ 251);var _WorkPlacesMap2=_interopRequireDefault(_WorkPlacesMap);var _App=__webpack_require__(/*! ./App.css */ 252);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={cities:[],topMatches:[],selected:'',month:'',cost:'',saved:[],markers:[],notes:'',work:[],map:'',loginName:'',loginPass:'',signupName:'',signupPass:'',signupEmail:'',userID:0,workCenter:'',class:''};return _this;}_createClass(App,[{key:'componentWillMount',value:function componentWillMount(){// fetch call to authenticate the user here
-	this.fetchAllCities();this.authenticateUser();}// This function will hit our API route to fetch all the cities listed
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Header=__webpack_require__(/*! ./Header/Header.jsx */ 179);var _Header2=_interopRequireDefault(_Header);var _Footer=__webpack_require__(/*! ./Footer/Footer.jsx */ 181);var _Footer2=_interopRequireDefault(_Footer);var _SearchForm=__webpack_require__(/*! ./SearchForm/SearchForm.jsx */ 183);var _SearchForm2=_interopRequireDefault(_SearchForm);var _SearchList=__webpack_require__(/*! ./SearchList/SearchList.jsx */ 185);var _SearchList2=_interopRequireDefault(_SearchList);var _SavedList=__webpack_require__(/*! ./SavedList/SavedList.jsx */ 189);var _SavedList2=_interopRequireDefault(_SavedList);var _MapContainer=__webpack_require__(/*! ./MapContainer/MapContainer.jsx */ 193);var _MapContainer2=_interopRequireDefault(_MapContainer);var _WorkPlaces=__webpack_require__(/*! ./WorkPlaces/WorkPlaces.jsx */ 247);var _WorkPlaces2=_interopRequireDefault(_WorkPlaces);var _WorkPlacesMap=__webpack_require__(/*! ./WorkPlacesMap/WorkPlacesMap.jsx */ 251);var _WorkPlacesMap2=_interopRequireDefault(_WorkPlacesMap);var _App=__webpack_require__(/*! ./App.css */ 252);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import Login from './auth/Login/Login.jsx';
+	// import SignUp from './auth/SignUp/SignUp.jsx';
+	// import Logout from './auth/Logout/Logout.jsx';
+	var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={cities:[],topMatches:[],selected:'',month:'',cost:'',saved:[],markers:[],notes:'',work:[],map:'',workCenter:'',class:'',loginName:'',loginPass:'',signupName:'',signupPass:'',signupEmail:''};return _this;}_createClass(App,[{key:'componentWillMount',value:function componentWillMount(){// fetch call to authenticate the user here
+	this.fetchAllCities();// this.authenticateUser();
+	}// This function will hit our API route to fetch all the cities listed
 	// in the nomadlist api. Then, set our cities state to this response object.
 	},{key:'fetchAllCities',value:function fetchAllCities(){var _this2=this;fetch('nomad/cities').then(function(r){return r.json();}).then(function(cities){return _this2.setState({cities:cities});});}// This will check if the cities state is updated, it will fire the filterCities function
 	},{key:'componentDidUpdate',value:function componentDidUpdate(prevProps,prevState){if(prevState.cities!==this.state.cities){this.filterCities();}else if(prevState.selected!==this.state.selected){this.formHandler();}}// This function will push the top 20 cities from the cities object into a new array
@@ -7559,20 +7563,121 @@
 	case'signupPass':this.setState({signupPass:value});break;default:break;}}// passes the login data to the api
 	// authenticates data with server
 	// response with login and user ID
-	},{key:'handleLogin',value:function handleLogin(){var _this5=this;fetch('/auth/login',{headers:{'Content-Type':'application/json'},method:'POST',body:JSON.stringify({username:this.state.loginName,password:this.state.loginPass})}).then(function(r){return r.json();}).then(function(response){if(!response.user.error){_this5.setState({userID:response.user.id});// saves jwt token and ID
-	window.localStorage.token=response.user.token;window.localStorage.id=response.user.id;}}).then(this.setState({loginName:'',loginPass:''})).then(console.log('logging in...')).catch(function(err){return console.log(err);});}// sends the signup data to the api server
+	// handleLogin() {
+	//   fetch('/auth/login', {
+	//     headers: {
+	//       'Content-Type': 'application/json',
+	//     },
+	//     method: 'POST',
+	//     body: JSON.stringify({
+	//       username: this.state.loginName,
+	//       password: this.state.loginPass,
+	//     }),
+	//   })
+	//   .then(r => r.json())
+	//   .then((response) => {
+	//     if (!(response.user.error)) {
+	//       this.setState({
+	//         userID: response.user.id,
+	//       });
+	//       // saves jwt token and ID
+	//       window.localStorage.token = response.user.token;
+	//       window.localStorage.id = response.user.id;
+	//     }
+	//   })
+	//   .then(this.setState({
+	//     loginName: '',
+	//     loginPass: ''
+	//   }))
+	//   .then(console.log('logging in...'))
+	//   .catch(err => console.log(err));
+	// }
+	// sends the signup data to the api server
 	// encrypts new user data and saves in db
 	// authenticates the response and returns the user id
-	},{key:'handleSignup',value:function handleSignup(){var _this6=this;fetch('/auth/signup',{headers:{'Content-Type':'application/json'},method:'POST',body:JSON.stringify({username:this.state.signupName,// email: this.state.signupEmail,
-	password:this.state.signupPass})}).then(function(r){return r.json();}).then(function(response){console.log(response);if(!response.error){_this6.setState({userID:response.user.id});window.localStorage.id=response.user.id;}else{alert(response.message);}}).then(this.setState({signupName:'',signupPass:''})).then(console.log('signup successful')).catch(function(err){return console.log(err);});}// handles logout of the user, will revert to login state
-	},{key:'handleLogout',value:function handleLogout(){fetch('/auth/logout',{headers:{'Content-Type':'application/json'},method:'DELETE',body:JSON.stringify({id:this.state.userID})});this.setState({userID:0});console.log('logging out');window.localStorage.token=null;window.localStorage.id=null;}// this authenticates the user on each page load
+	// handleSignup() {
+	//   fetch('/auth/signup', {
+	//     headers: {
+	//       'Content-Type': 'application/json',
+	//     },
+	//     method: 'POST',
+	//     body: JSON.stringify({
+	//       username: this.state.signupName,
+	//       // email: this.state.signupEmail,
+	//       password: this.state.signupPass,
+	//     }),
+	//   })
+	//   .then(r => r.json())
+	//   .then((response) => {
+	//     console.log(response);
+	//     if (!(response.error)) {
+	//       this.setState({
+	//         userID: response.user.id,
+	//       })
+	//       window.localStorage.id = response.user.id
+	//     } else {
+	//       alert(response.message);
+	//     }
+	//   })
+	//   .then(this.setState({
+	//     signupName: '',
+	//     signupPass: '',
+	//     // signupEmail: '',
+	//   }))
+	//   .then(console.log('signup successful'))
+	//   .catch(err => console.log(err));
+	// }
+	// handles logout of the user, will revert to login state
+	// handleLogout() {
+	//   fetch('/auth/logout', {
+	//     headers: {
+	//       'Content-Type': 'application/json',
+	//     },
+	//     method: 'DELETE',
+	//     body: JSON.stringify({
+	//       id: this.state.userID,
+	//     }),
+	//   });
+	//   this.setState({ userID: 0 });
+	//   console.log('logging out');
+	//   window.localStorage.token = null;
+	//   window.localStorage.id = null;
+	// }
+	// this authenticates the user on each page load
 	// uses a token from local storage to verify access
-	},{key:'authenticateUser',value:function authenticateUser(){var _this7=this;fetch('/auth/verify',{headers:{'Content-Type':'application/json'},method:'POST',body:JSON.stringify({id:this.state.id,// do we need to pass this? In localStorage...
-	token:window.localStorage.getItem('token')})}).then(function(r){return r.json();}).then(function(response){if(!response.error){_this7.setState({userID:response.user.id});// saves a new jwt token
-	window.localStorage.token=response.token;}else{_this7.setState({userID:0});window.localStorage.token=null;window.localStorage.id=null;}}).catch(function(err){return console.log(err);});}// This function will fetch places to work in a particular city from the nomadlist api
+	// authenticateUser() {
+	//   fetch('/auth/verify', {
+	//     headers: {
+	//       'Content-Type': 'application/json',
+	//     },
+	//     method: 'POST',
+	//     body: JSON.stringify({
+	//       id: this.state.id, // do we need to pass this? In localStorage...
+	//       token: window.localStorage.getItem('token'),
+	//     }),
+	//   })
+	//   .then(r => r.json())
+	//   .then((response) => {
+	//     if (!(response.error)) {
+	//       this.setState({
+	//         userID: response.user.id,
+	//       });
+	//       // saves a new jwt token
+	//       window.localStorage.token = response.token;
+	//     } else {
+	//       this.setState({
+	//         userID: 0,
+	//       });
+	//       window.localStorage.token = null;
+	//       window.localStorage.id = null
+	//     }
+	//   })
+	//   .catch(err => console.log(err));
+	// }
+	// This function will fetch places to work in a particular city from the nomadlist api
 	// Then, reset the state of the workCenter to the lat and lng of the city selected
-	},{key:'getWorkPlaces',value:function getWorkPlaces(slug,lat,lng){var _this8=this;console.log('get work places');fetch('/nomad/work/'+slug).then(function(r){return r.json();}).then(function(work){return _this8.setState({work:work});}).then(this.setMapCenter(lat,lng));}// Reset the state of the workCenter to an object with lat and lng
-	},{key:'setMapCenter',value:function setMapCenter(lat,lng){this.setState({workCenter:{lat:parseFloat(lat),lng:parseFloat(lng)}});}},{key:'focusMe',value:function focusMe(button){this.ref.selectedbutton=document.getElementsByClassName("button-selected")[0].className="";button.className="button-selected";}},{key:'render',value:function render(){var _this9=this;var location={lat:0,lng:0};return _react2.default.createElement('div',{className:'App'},_react2.default.createElement(_Header2.default,{updateAuthForms:function updateAuthForms(event){return _this9.updateAuthForms(event);},handleSignup:this.handleSignup.bind(this),handleLogin:this.handleLogin.bind(this),loginName:this.state.loginName,loginPass:this.state.loginPass,signupName:this.state.signupName,signupPass:this.state.signupPass,handleLogout:this.handleLogout.bind(this)}),_react2.default.createElement(_SearchForm2.default,{month:this.state.month,'class':this.state.class,handleUpdateMonth:function handleUpdateMonth(event){return _this9.handleUpdateMonth(event);},handleUpdateWeather:function handleUpdateWeather(event){return _this9.handleUpdateWeather(event);},handleUpdateCost:function handleUpdateCost(event){return _this9.handleUpdateCost(event);},searchByParams:this.searchByParams.bind(this)}),_react2.default.createElement('div',{className:'main-container'},_react2.default.createElement('div',{className:'search-form-container'},_react2.default.createElement(_SearchList2.default,{matches:this.state.topMatches,changeSelection:this.changeSelection.bind(this)})),_react2.default.createElement('div',{className:'saved-cities-container'},_react2.default.createElement(_SavedList2.default,{fetchSavedCities:this.fetchSavedCities.bind(this),savedCities:this.state.saved,deleteCity:this.deleteCity.bind(this),notes:this.state.notes,updateNotes:function updateNotes(event){return _this9.updateNotes(event);},updateFormHandler:this.updateFormHandler.bind(this),getWorkPlaces:this.getWorkPlaces.bind(this)}),_react2.default.createElement('div',{style:{width:'100%',height:'46%'}},_react2.default.createElement(_MapContainer2.default,{center:location,markers:this.state.saved}))),_react2.default.createElement('div',{className:'workplaces-container'},_react2.default.createElement(_WorkPlaces2.default,{work:this.state.work}),_react2.default.createElement('div',{style:{width:'100%',height:'46%'}},_react2.default.createElement(_WorkPlacesMap2.default,{center:this.state.workCenter,markers:this.state.work})))),_react2.default.createElement(_Footer2.default,null));}}]);return App;}(_react.Component);exports.default=App;
+	},{key:'getWorkPlaces',value:function getWorkPlaces(slug,lat,lng){var _this5=this;console.log('get work places');fetch('/nomad/work/'+slug).then(function(r){return r.json();}).then(function(work){return _this5.setState({work:work});}).then(this.setMapCenter(lat,lng));}// Reset the state of the workCenter to an object with lat and lng
+	},{key:'setMapCenter',value:function setMapCenter(lat,lng){this.setState({workCenter:{lat:parseFloat(lat),lng:parseFloat(lng)}});}},{key:'render',value:function render(){var _this6=this;var location={lat:0,lng:0};return _react2.default.createElement('div',{className:'App'},_react2.default.createElement(_Header2.default,{updateAuthForms:function updateAuthForms(event){return _this6.updateAuthForms(event);},loginName:this.state.loginName,loginPass:this.state.loginPass,signupName:this.state.signupName,signupPass:this.state.signupPass}),_react2.default.createElement(_SearchForm2.default,{month:this.state.month,'class':this.state.class,handleUpdateMonth:function handleUpdateMonth(event){return _this6.handleUpdateMonth(event);},handleUpdateWeather:function handleUpdateWeather(event){return _this6.handleUpdateWeather(event);},handleUpdateCost:function handleUpdateCost(event){return _this6.handleUpdateCost(event);},searchByParams:this.searchByParams.bind(this)}),_react2.default.createElement('div',{className:'main-container'},_react2.default.createElement('div',{className:'search-form-container'},_react2.default.createElement(_SearchList2.default,{matches:this.state.topMatches,changeSelection:this.changeSelection.bind(this)})),_react2.default.createElement('div',{className:'saved-cities-container'},_react2.default.createElement(_SavedList2.default,{fetchSavedCities:this.fetchSavedCities.bind(this),savedCities:this.state.saved,deleteCity:this.deleteCity.bind(this),notes:this.state.notes,updateNotes:function updateNotes(event){return _this6.updateNotes(event);},updateFormHandler:this.updateFormHandler.bind(this),getWorkPlaces:this.getWorkPlaces.bind(this)}),_react2.default.createElement('div',{style:{width:'100%',height:'46%'}},_react2.default.createElement(_MapContainer2.default,{center:location,markers:this.state.saved}))),_react2.default.createElement('div',{className:'workplaces-container'},_react2.default.createElement(_WorkPlaces2.default,{work:this.state.work}),_react2.default.createElement('div',{style:{width:'100%',height:'46%'}},_react2.default.createElement(_WorkPlacesMap2.default,{center:this.state.workCenter,markers:this.state.work})))),_react2.default.createElement(_Footer2.default,null));}}]);return App;}(_react.Component);exports.default=App;
 
 /***/ },
 /* 179 */
@@ -7581,7 +7686,7 @@
   \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);__webpack_require__(/*! ../Header/Header.css */ 180);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Header=function Header(props){return _react2.default.createElement('div',{className:'header'},_react2.default.createElement('div',{className:'header-top'},_react2.default.createElement('div',{id:'logo-container'},_react2.default.createElement('div',{id:'plane'},_react2.default.createElement('img',{className:'plane-image',src:'http://i.imgur.com/gwGHVJE.png',alt:''})),_react2.default.createElement('h1',null,'Digital Gypsy')),_react2.default.createElement('div',{id:'button-holder'},_react2.default.createElement('div',{id:'dropdown'},_react2.default.createElement('ul',null,_react2.default.createElement('li',{className:'detail'},_react2.default.createElement('button',{className:'login-buttons'},'Sign Up'),_react2.default.createElement('ul',null,_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.signupName,name:'signupName',placeholder:'Username',onChange:props.updateAuthForms})),_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.signupPass,name:'signupPass',placeholder:'Password',onChange:props.updateAuthForms})),_react2.default.createElement('button',{id:'signup-button',onClick:props.handleSignup},'Sign up!'))))),_react2.default.createElement('div',{id:'dropdown'},_react2.default.createElement('ul',null,_react2.default.createElement('li',{className:'detail'},_react2.default.createElement('button',{className:'login-buttons'},'Login'),_react2.default.createElement('ul',null,_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.loginName,name:'loginName',placeholder:'Username',onChange:props.updateAuthForms})),_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.loginPass,name:'loginPass',placeholder:'Password',onChange:props.updateAuthForms})),_react2.default.createElement('li',null,_react2.default.createElement('button',{id:'login-button',onClick:props.handleLogin},'Log in!')))))),_react2.default.createElement('div',{id:'dropdown'},_react2.default.createElement('button',{className:'login-buttons',id:'logout-button',value:'Log out',onClick:props.handleLogout},'Log out')))));};exports.default=Header;
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);__webpack_require__(/*! ../Header/Header.css */ 180);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Header=function Header(props){return _react2.default.createElement('div',{className:'header'},_react2.default.createElement('div',{className:'header-top'},_react2.default.createElement('div',{id:'logo-container'},_react2.default.createElement('div',{id:'plane'},_react2.default.createElement('img',{className:'plane-image',src:'http://i.imgur.com/gwGHVJE.png',alt:''})),_react2.default.createElement('h1',null,'Digital Gypsy')),_react2.default.createElement('div',{id:'button-holder'},_react2.default.createElement('div',{id:'dropdown'},_react2.default.createElement('ul',null,_react2.default.createElement('li',{className:'detail'},_react2.default.createElement('button',{className:'login-buttons'},'Sign Up'),_react2.default.createElement('ul',null,_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.signupName,name:'signupName',placeholder:'Username',onChange:props.updateAuthForms})),_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.signupPass,name:'signupPass',placeholder:'Password',onChange:props.updateAuthForms})),_react2.default.createElement('button',{id:'signup-button'},'Sign up!'))))),_react2.default.createElement('div',{id:'dropdown'},_react2.default.createElement('ul',null,_react2.default.createElement('li',{className:'detail'},_react2.default.createElement('button',{className:'login-buttons'},'Login'),_react2.default.createElement('ul',null,_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.loginName,name:'loginName',placeholder:'Username',onChange:props.updateAuthForms})),_react2.default.createElement('li',null,_react2.default.createElement('input',{type:'text',value:props.loginPass,name:'loginPass',placeholder:'Password',onChange:props.updateAuthForms})),_react2.default.createElement('li',null,_react2.default.createElement('button',{id:'login-button'},'Log in!')))))),_react2.default.createElement('div',{id:'dropdown'},_react2.default.createElement('button',{className:'login-buttons',id:'logout-button',value:'Log out'},'Log out')))));};exports.default=Header;
 
 /***/ },
 /* 180 */
@@ -8461,63 +8566,12 @@
 	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=["places_changed"];module.exports=exports["default"];
 
 /***/ },
-/* 241 */
-/*!*********************************************!*\
-  !*** ./src/components/auth/Login/Login.jsx ***!
-  \*********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);__webpack_require__(/*! ./Login.css */ 242);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Login=function Login(props){// if (window.location.pathname === '/login') {
-	return _react2.default.createElement('div',{className:'login-box'},_react2.default.createElement('input',{type:'text',value:props.loginName,name:'loginName',placeholder:'username',onChange:props.updateAuthForms}),_react2.default.createElement('input',{type:'text',value:props.loginPass,name:'loginPass',placeholder:'password',onChange:props.updateAuthForms}),_react2.default.createElement('button',{id:'login-button',onClick:props.handleLogin},'Log in'));// }
-	// return (<span />);
-	};exports.default=Login;
-
-/***/ },
-/* 242 */
-/*!*********************************************!*\
-  !*** ./src/components/auth/Login/Login.css ***!
-  \*********************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 243 */
-/*!***********************************************!*\
-  !*** ./src/components/auth/SignUp/SignUp.jsx ***!
-  \***********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);__webpack_require__(/*! ./SignUp.css */ 244);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SignUp=function SignUp(props){return _react2.default.createElement('div',{className:'login-box'},_react2.default.createElement('input',{type:'text',value:props.signupName,name:'signupName',placeholder:'username',onChange:props.updateAuthForms}),_react2.default.createElement('input',{type:'text',value:props.signupPass,name:'signupPass',placeholder:'password',onChange:props.updateAuthForms}),_react2.default.createElement('button',{id:'signup-button',onClick:props.handleSignup},'Sign up!'));};exports.default=SignUp;
-
-/***/ },
-/* 244 */
-/*!***********************************************!*\
-  !*** ./src/components/auth/SignUp/SignUp.css ***!
-  \***********************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 245 */
-/*!***********************************************!*\
-  !*** ./src/components/auth/Logout/Logout.jsx ***!
-  \***********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);__webpack_require__(/*! ./Logout.css */ 246);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Logout=function Logout(props){return _react2.default.createElement('div',{className:'login-box'},_react2.default.createElement('button',{id:'logout-button',value:'Log out',onClick:props.handleLogout},'Log out'));};exports.default=Logout;
-
-/***/ },
-/* 246 */
-/*!***********************************************!*\
-  !*** ./src/components/auth/Logout/Logout.css ***!
-  \***********************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
 /* 247 */
 /*!**************************************************!*\
   !*** ./src/components/WorkPlaces/WorkPlaces.jsx ***!

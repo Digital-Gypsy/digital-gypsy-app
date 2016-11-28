@@ -36,7 +36,6 @@ const Header = props => (
                 </li>
                 <button
                   id="signup-button"
-                  onClick={props.handleSignup}
                 >
                   Sign up!
                 </button>
@@ -70,7 +69,6 @@ const Header = props => (
                 <li>
                   <button
                     id="login-button"
-                    onClick={props.handleLogin}
                   >
                     Log in!
                   </button>
@@ -83,7 +81,6 @@ const Header = props => (
           <button className="login-buttons"
             id="logout-button"
             value="Log out"
-            onClick={props.handleLogout}
           >
             Log out
           </button>

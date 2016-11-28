@@ -3,8 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
-const cookieParser = require('cookie-parser');
-const passport = require('passport');
+// const cookieParser = require('cookie-parser');
+// const passport = require('passport');
 
 const app = express();
 const PORT = process.argv[2] || process.env.port || 3000;
@@ -19,10 +19,10 @@ const nomadRouter = require('./routes/nomadlist');
 const authRouter = require('./routes/auth');
 
 // initialize passport, part of our validation middleware
-app.use(passport.initialize());
+// app.use(passport.initialize());
 
 // lets us read and write client-side cookies
-app.use(cookieParser());
+// app.use(cookieParser());
 
 // set up some logging
 app.use(logger('dev'));
@@ -36,6 +36,6 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // map our routes
 app.use('/gypsy', gypsyRouter);
 app.use('/nomad', nomadRouter);
-app.use('/auth', authRouter);
+// app.use('/auth', authRouter);
 
 app.listen(PORT, () => { console.log('Wanderlust 🌍')});
