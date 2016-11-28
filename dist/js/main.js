@@ -47,7 +47,7 @@
   \**********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _App=__webpack_require__(/*! ./components/App.jsx */ 178);var _App2=_interopRequireDefault(_App);__webpack_require__(/*! ./index.css */ 253);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// mount our App at #root-container
+	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _App=__webpack_require__(/*! ./components/App.jsx */ 178);var _App2=_interopRequireDefault(_App);__webpack_require__(/*! ./index.css */ 247);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// mount our App at #root-container
 	_reactDom2.default.render(_react2.default.createElement(_App2.default,null),document.querySelector('#root-container'));
 
 /***/ },
@@ -7514,7 +7514,7 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Header=__webpack_require__(/*! ./Header/Header.jsx */ 179);var _Header2=_interopRequireDefault(_Header);var _Footer=__webpack_require__(/*! ./Footer/Footer.jsx */ 181);var _Footer2=_interopRequireDefault(_Footer);var _SearchForm=__webpack_require__(/*! ./SearchForm/SearchForm.jsx */ 183);var _SearchForm2=_interopRequireDefault(_SearchForm);var _SearchList=__webpack_require__(/*! ./SearchList/SearchList.jsx */ 185);var _SearchList2=_interopRequireDefault(_SearchList);var _SavedList=__webpack_require__(/*! ./SavedList/SavedList.jsx */ 189);var _SavedList2=_interopRequireDefault(_SavedList);var _MapContainer=__webpack_require__(/*! ./MapContainer/MapContainer.jsx */ 193);var _MapContainer2=_interopRequireDefault(_MapContainer);var _WorkPlaces=__webpack_require__(/*! ./WorkPlaces/WorkPlaces.jsx */ 247);var _WorkPlaces2=_interopRequireDefault(_WorkPlaces);var _WorkPlacesMap=__webpack_require__(/*! ./WorkPlacesMap/WorkPlacesMap.jsx */ 251);var _WorkPlacesMap2=_interopRequireDefault(_WorkPlacesMap);var _App=__webpack_require__(/*! ./App.css */ 252);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import Login from './auth/Login/Login.jsx';
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _Header=__webpack_require__(/*! ./Header/Header.jsx */ 179);var _Header2=_interopRequireDefault(_Header);var _Footer=__webpack_require__(/*! ./Footer/Footer.jsx */ 181);var _Footer2=_interopRequireDefault(_Footer);var _SearchForm=__webpack_require__(/*! ./SearchForm/SearchForm.jsx */ 183);var _SearchForm2=_interopRequireDefault(_SearchForm);var _SearchList=__webpack_require__(/*! ./SearchList/SearchList.jsx */ 185);var _SearchList2=_interopRequireDefault(_SearchList);var _SavedList=__webpack_require__(/*! ./SavedList/SavedList.jsx */ 189);var _SavedList2=_interopRequireDefault(_SavedList);var _MapContainer=__webpack_require__(/*! ./MapContainer/MapContainer.jsx */ 193);var _MapContainer2=_interopRequireDefault(_MapContainer);var _WorkPlaces=__webpack_require__(/*! ./WorkPlaces/WorkPlaces.jsx */ 241);var _WorkPlaces2=_interopRequireDefault(_WorkPlaces);var _WorkPlacesMap=__webpack_require__(/*! ./WorkPlacesMap/WorkPlacesMap.jsx */ 245);var _WorkPlacesMap2=_interopRequireDefault(_WorkPlacesMap);var _App=__webpack_require__(/*! ./App.css */ 246);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import Login from './auth/Login/Login.jsx';
 	// import SignUp from './auth/SignUp/SignUp.jsx';
 	// import Logout from './auth/Logout/Logout.jsx';
 	var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={cities:[],topMatches:[],selected:'',month:'',cost:'',saved:[],markers:[],notes:'',work:[],map:'',workCenter:'',class:'',loginName:'',loginPass:'',signupName:'',signupPass:'',signupEmail:''};return _this;}_createClass(App,[{key:'componentWillMount',value:function componentWillMount(){// fetch call to authenticate the user here
@@ -8566,32 +8566,26 @@
 	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=["places_changed"];module.exports=exports["default"];
 
 /***/ },
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */
+/* 241 */
 /*!**************************************************!*\
   !*** ./src/components/WorkPlaces/WorkPlaces.jsx ***!
   \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _WorkPlaceItem=__webpack_require__(/*! ../WorkPlaceItem/WorkPlaceItem.jsx */ 248);var _WorkPlaceItem2=_interopRequireDefault(_WorkPlaceItem);__webpack_require__(/*! ./WorkPlaces.css */ 250);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var WorkPlaces=function(_Component){_inherits(WorkPlaces,_Component);function WorkPlaces(){_classCallCheck(this,WorkPlaces);return _possibleConstructorReturn(this,(WorkPlaces.__proto__||Object.getPrototypeOf(WorkPlaces)).apply(this,arguments));}_createClass(WorkPlaces,[{key:'renderWorkPlaces',// returns the saved list
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _WorkPlaceItem=__webpack_require__(/*! ../WorkPlaceItem/WorkPlaceItem.jsx */ 242);var _WorkPlaceItem2=_interopRequireDefault(_WorkPlaceItem);__webpack_require__(/*! ./WorkPlaces.css */ 244);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var WorkPlaces=function(_Component){_inherits(WorkPlaces,_Component);function WorkPlaces(){_classCallCheck(this,WorkPlaces);return _possibleConstructorReturn(this,(WorkPlaces.__proto__||Object.getPrototypeOf(WorkPlaces)).apply(this,arguments));}_createClass(WorkPlaces,[{key:'renderWorkPlaces',// returns the saved list
 	value:function renderWorkPlaces(){if(this.props.work.length===0){return _react2.default.createElement('div',{className:'no-saved'},_react2.default.createElement('p',null,'Check out places to work in one of your saved destintations.'));}var labels='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789';return this.props.work.map(function(work,i){return _react2.default.createElement(_WorkPlaceItem2.default,{key:i,name:work.name,price:work.price_per_day_in_usd,type:work.type,url:work.url,label:labels[i]});});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'workplace-list'},_react2.default.createElement('h2',null,'Places to Work'),this.renderWorkPlaces());}}]);return WorkPlaces;}(_react.Component);exports.default=WorkPlaces;
 
 /***/ },
-/* 248 */
+/* 242 */
 /*!********************************************************!*\
   !*** ./src/components/WorkPlaceItem/WorkPlaceItem.jsx ***!
   \********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);__webpack_require__(/*! ./WorkPlaceItem.css */ 249);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var WorkPlaceItem=function WorkPlaceItem(props){return _react2.default.createElement('div',{className:'workplace-item'},_react2.default.createElement('h4',null,props.label,'. ',props.name),_react2.default.createElement('p',null,'Price Per Day in USD: $',props.price),_react2.default.createElement('p',null,'Type: ',props.type),_react2.default.createElement('a',{href:props.url},'More Info'));};exports.default=WorkPlaceItem;
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);__webpack_require__(/*! ./WorkPlaceItem.css */ 243);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var WorkPlaceItem=function WorkPlaceItem(props){return _react2.default.createElement('div',{className:'workplace-item'},_react2.default.createElement('h4',null,props.label,'. ',props.name),_react2.default.createElement('p',null,'Price Per Day in USD: $',props.price),_react2.default.createElement('p',null,'Type: ',props.type),_react2.default.createElement('a',{href:props.url},'More Info'));};exports.default=WorkPlaceItem;
 
 /***/ },
-/* 249 */
+/* 243 */
 /*!********************************************************!*\
   !*** ./src/components/WorkPlaceItem/WorkPlaceItem.css ***!
   \********************************************************/
@@ -8600,7 +8594,7 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 250 */
+/* 244 */
 /*!**************************************************!*\
   !*** ./src/components/WorkPlaces/WorkPlaces.css ***!
   \**************************************************/
@@ -8609,7 +8603,7 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 251 */
+/* 245 */
 /*!********************************************************!*\
   !*** ./src/components/WorkPlacesMap/WorkPlacesMap.jsx ***!
   \********************************************************/
@@ -8622,7 +8616,7 @@
 	var markers=this.props.markers.map(function(venue,i){var marker={position:{lat:venue.location.latitude,lng:venue.location.longitude},label:labels[i]};return _react2.default.createElement(_reactGoogleMaps.Marker,_extends({key:i},marker));});if(this.props.center!==''){return _react2.default.createElement(_reactGoogleMaps.GoogleMapLoader,{containerElement:mapContainer,googleMapElement:_react2.default.createElement(_reactGoogleMaps.GoogleMap,{defaultZoom:13,defaultCenter:this.props.center,options:{streetViewControl:false,mapTypeContro:false}},markers)});}else{return _react2.default.createElement('div',null);}}}]);return WorkPlacesMap;}(_react.Component);exports.default=WorkPlacesMap;
 
 /***/ },
-/* 252 */
+/* 246 */
 /*!********************************!*\
   !*** ./src/components/App.css ***!
   \********************************/
@@ -8631,7 +8625,7 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 253 */
+/* 247 */
 /*!***********************!*\
   !*** ./src/index.css ***!
   \***********************/

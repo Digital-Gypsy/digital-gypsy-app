@@ -1,10 +1,14 @@
-require('dotenv').config({ silent: true });
+'use strict';
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
 // const cookieParser = require('cookie-parser');
 // const passport = require('passport');
+// This tests to see if we have NODE_ENV in our environment.
+// Only load the dotenv if we need it.
+const isDev = !('NODE_ENV' in process.env) && require('dotenv').config() && true;
 
 const app = express();
 const PORT = process.argv[2] || process.env.port || 3000;
@@ -25,7 +29,7 @@ const authRouter = require('./routes/auth');
 // app.use(cookieParser());
 
 // set up some logging
-app.use(logger('dev'));
+app.use(logger( isDev ? 'dev' : 'common'));
 
 // This will parse our playload from fetch which is sent as a JSON object
 app.use(bodyParser.json());
